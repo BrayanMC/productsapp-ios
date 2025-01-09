@@ -37,6 +37,28 @@
 			);
 			target = 3E0C35E42D2F8939003B669D /* ProductsApp */;
 		};
+		3E0C36812D2F8CA9003B669D /* Exceptions for "ProductsApp" folder in "ProductsAppTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"/Localized: Resources/Localizable.strings",
+				Resources/Assets/Colors.xcassets,
+				"Resources/Fonts/MuseoSans-300.otf",
+				"Resources/Fonts/MuseoSans-500.otf",
+				"Resources/Fonts/MuseoSans-700.otf",
+			);
+			target = 3E0C35FA2D2F893D003B669D /* ProductsAppTests */;
+		};
+		3E0C36822D2F8CA9003B669D /* Exceptions for "ProductsApp" folder in "ProductsAppUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"/Localized: Resources/Localizable.strings",
+				Resources/Assets/Colors.xcassets,
+				"Resources/Fonts/MuseoSans-300.otf",
+				"Resources/Fonts/MuseoSans-500.otf",
+				"Resources/Fonts/MuseoSans-700.otf",
+			);
+			target = 3E0C36042D2F893D003B669D /* ProductsAppUITests */;
+		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -44,6 +66,8 @@
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
 				3E0C360D2D2F893D003B669D /* Exceptions for "ProductsApp" folder in "ProductsApp" target */,
+				3E0C36812D2F8CA9003B669D /* Exceptions for "ProductsApp" folder in "ProductsAppTests" target */,
+				3E0C36822D2F8CA9003B669D /* Exceptions for "ProductsApp" folder in "ProductsAppUITests" target */,
 			);
 			path = ProductsApp;
 			sourceTree = "<group>";
@@ -295,7 +319,6 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -327,7 +350,6 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

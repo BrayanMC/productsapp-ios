@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  ProductsApp
+
+  Created by Brayan Munoz on 8/01/25.
+  
+*/
+
+// MARK: MAIN TAB BAR
+
+"mainTabBar_productsItem_title" = "Productos";
+"mainTabBar_menuItem_title" = "Menú";
