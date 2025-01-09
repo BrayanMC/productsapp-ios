@@ -11,6 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MenuViewController" customModule="ProductsApp" customModuleProvider="target">
             <connections>
                 <outlet property="changeColorOptionView" destination="odg-ta-RvO" id="N67-Wo-Ego"/>
+                <outlet property="resetColorOptionView" destination="cfQ-lj-MyT" id="VJK-dw-iF2"/>
                 <outlet property="view" destination="df7-AY-HI3" id="RyU-NJ-uRP"/>
             </connections>
         </placeholder>
@@ -23,16 +24,23 @@
                     <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                     <subviews>
                         <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ds3-oL-RQc">
-                            <rect key="frame" x="0.0" y="0.0" width="393" height="124"/>
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="200"/>
                             <subviews>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="qgC-bI-ZSI">
-                                    <rect key="frame" x="32" y="32" width="329" height="60"/>
+                                    <rect key="frame" x="32" y="32" width="329" height="136"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="odg-ta-RvO" customClass="OptionView" customModule="ProductsApp" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="0.0" width="329" height="60"/>
                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="60" id="fEx-2V-auN"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cfQ-lj-MyT" customClass="OptionView" customModule="ProductsApp" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="76" width="329" height="60"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="60" id="Sab-sO-7Uy"/>
                                             </constraints>
                                         </view>
                                     </subviews>

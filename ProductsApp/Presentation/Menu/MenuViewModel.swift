@@ -39,4 +39,8 @@ class MenuViewModel: BaseViewModel {
             selectRandomColor()
         }
     }
+    
+    func resetColor(with color: UIColor) {
+        updateBackgroundColor(color)
+    }
 }

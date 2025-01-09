@@ -15,3 +15,4 @@
 // MARK: MENU SCREEN
 
 "menuScreen_changeColorOption_title" = "Cambiar de color";
+"menuScreen_resetColorOption_title" = "Reiniciar color";
