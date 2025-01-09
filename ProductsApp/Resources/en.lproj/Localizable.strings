@@ -10,3 +10,8 @@
 
 "mainTabBar_productsItem_title" = "Productos";
 "mainTabBar_menuItem_title" = "Menú";
+
+
+// MARK: MENU SCREEN
+
+"menuScreen_changeColorOption_title" = "Cambiar de color";

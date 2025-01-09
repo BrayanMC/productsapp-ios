@@ -7,26 +7,28 @@
 
 import UIKit
 
-enum TabBarItem: String, CaseIterable {
+enum TabBarItem: CaseIterable {
     
-    case products = "mainTabBar_productsItem_title"
-    case menu = "mainTabBar_menuItem_title"
+    case products
+    case menu
     
     var viewController: UIViewController {
         switch self {
         case .products:
             return UIViewController()
         case .menu:
-            return UIViewController()
+            let viewController = MenuViewController.instantiateFromXib()
+            viewController.viewModel = ViewModelFactory.makeMenuViewModel()
+            return viewController
         }
     }
     
     var displayTitle: String {
         switch self {
         case .products:
-            return "Inicio"
+            return "mainTabBar_productsItem_title"
         case .menu:
-            return "Buscar"
+            return "mainTabBar_menuItem_title"
         }
     }
 

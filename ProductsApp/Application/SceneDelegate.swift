@@ -52,12 +52,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
     
     private func buildMainTabBar() -> MainTabBarController {
-        let mainTabBarController = MainTabBarController()
-        
-        let colorRepository = UserDefaultsColorRepository()
-        let getBackgroundColorUseCase = GetBackgroundColorUseCase(repository: colorRepository)
-        let viewModel = MainTabBarViewModel(getBackgroundColorUseCase: getBackgroundColorUseCase)
-        mainTabBarController.viewModel = viewModel
+        let mainTabBarController = MainTabBarController.instantiateFromStoryboard(storyboardName: "Main")
+        mainTabBarController.viewModel = ViewModelFactory.makeMainTabBarViewModel()
         return mainTabBarController
     }
 }

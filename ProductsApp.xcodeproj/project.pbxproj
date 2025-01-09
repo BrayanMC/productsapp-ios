@@ -41,10 +41,12 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				"/Localized: Resources/Localizable.strings",
+				Presentation/Menu/MenuViewController.xib,
 				Resources/Assets/Colors.xcassets,
 				"Resources/Fonts/MuseoSans-300.otf",
 				"Resources/Fonts/MuseoSans-500.otf",
 				"Resources/Fonts/MuseoSans-700.otf",
+				UIComponents/OptionView/OptionView.xib,
 			);
 			target = 3E0C35FA2D2F893D003B669D /* ProductsAppTests */;
 		};
@@ -52,10 +54,12 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				"/Localized: Resources/Localizable.strings",
+				Presentation/Menu/MenuViewController.xib,
 				Resources/Assets/Colors.xcassets,
 				"Resources/Fonts/MuseoSans-300.otf",
 				"Resources/Fonts/MuseoSans-500.otf",
 				"Resources/Fonts/MuseoSans-700.otf",
+				UIComponents/OptionView/OptionView.xib,
 			);
 			target = 3E0C36042D2F893D003B669D /* ProductsAppUITests */;
 		};

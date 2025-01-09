@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MainTabBarController: UITabBarController {
+class MainTabBarController: UITabBarController, Storyboarded {
     
     var viewModel: MainTabBarViewModel?
 
