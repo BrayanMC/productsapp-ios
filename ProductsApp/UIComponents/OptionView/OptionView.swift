@@ -15,7 +15,6 @@ public class OptionView: UIView {
     @IBOutlet weak var contentView: UIView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var optionButton: UIButton!
-    @IBOutlet weak var optionAccesoryImageView: UIImageView!
     
     // MARK: - Properties
     
@@ -24,7 +23,6 @@ public class OptionView: UIView {
     public var isClickable: Bool = true {
         didSet {
             optionButton.isUserInteractionEnabled = isClickable
-            optionAccesoryImageView.isHidden = !isClickable
         }
     }
     

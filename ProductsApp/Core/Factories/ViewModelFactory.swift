@@ -24,4 +24,9 @@ class ViewModelFactory {
             setBackgroundColorUseCase: setBackgroundColorUseCase
         )
     }
+    
+    static func makeProductsViewModel() -> ProductsViewModel {
+        return ProductsViewModel(
+        )
+    }
 }

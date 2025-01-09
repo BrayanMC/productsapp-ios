@@ -42,6 +42,8 @@
 			membershipExceptions = (
 				"/Localized: Resources/Localizable.strings",
 				Presentation/Menu/MenuViewController.xib,
+				Presentation/Products/ProductCell/ProductCellView.xib,
+				Presentation/Products/ProductsViewController.xib,
 				Resources/Assets/Colors.xcassets,
 				"Resources/Fonts/MuseoSans-300.otf",
 				"Resources/Fonts/MuseoSans-500.otf",
@@ -55,6 +57,8 @@
 			membershipExceptions = (
 				"/Localized: Resources/Localizable.strings",
 				Presentation/Menu/MenuViewController.xib,
+				Presentation/Products/ProductCell/ProductCellView.xib,
+				Presentation/Products/ProductsViewController.xib,
 				Resources/Assets/Colors.xcassets,
 				"Resources/Fonts/MuseoSans-300.otf",
 				"Resources/Fonts/MuseoSans-500.otf",

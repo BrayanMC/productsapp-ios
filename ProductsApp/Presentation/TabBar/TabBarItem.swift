@@ -15,7 +15,9 @@ enum TabBarItem: CaseIterable {
     var viewController: UIViewController {
         switch self {
         case .products:
-            return UIViewController()
+            let viewController = ProductsViewController.instantiateFromXib()
+            viewController.viewModel = ViewModelFactory.makeProductsViewModel()
+            return viewController
         case .menu:
             let viewController = MenuViewController.instantiateFromXib()
             viewController.viewModel = ViewModelFactory.makeMenuViewModel()

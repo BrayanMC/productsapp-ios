@@ -52,4 +52,9 @@ extension UIView {
         layer.shadowRadius = shadowRadius
         layer.masksToBounds = false
     }
+    
+    func addTapGesture(_ target: Any, action: Selector) {
+        isUserInteractionEnabled = true
+        addGestureRecognizer(UITapGestureRecognizer(target: target, action: action))
+    }
 }

@@ -16,11 +16,11 @@ class MenuViewController: UIViewController, Storyboarded {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupViews()
+        setupView()
         setupBindings()
     }
     
-    private func setupViews() {
+    private func setupView() {
         initOptionView()
     }
     

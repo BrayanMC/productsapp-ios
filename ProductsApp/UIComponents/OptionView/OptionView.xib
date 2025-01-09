@@ -11,7 +11,6 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OptionView" customModule="ProductsApp" customModuleProvider="target">
             <connections>
                 <outlet property="contentView" destination="2NW-oO-n5V" id="Hf2-qa-p9l"/>
-                <outlet property="optionAccesoryImageView" destination="Ev3-4z-KOk" id="epn-FL-Bhl"/>
                 <outlet property="optionButton" destination="6Zv-mf-SAt" id="xLM-xy-dR4"/>
                 <outlet property="titleLabel" destination="t2q-Jd-Dv4" id="bEu-7D-dZo"/>
             </connections>
@@ -25,18 +24,11 @@
                     <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Métodos de pago" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t2q-Jd-Dv4">
-                            <rect key="frame" x="16" y="2" width="350" height="56"/>
+                            <rect key="frame" x="15.999999999999993" y="2" width="127.33333333333331" height="56"/>
                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                             <color key="textColor" name="primary"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rightArrow_ic" translatesAutoresizingMaskIntoConstraints="NO" id="Ev3-4z-KOk">
-                            <rect key="frame" x="374" y="18" width="24" height="24"/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="24" id="DAz-fl-mAw"/>
-                                <constraint firstAttribute="height" constant="24" id="XOK-ms-Hkd"/>
-                            </constraints>
-                        </imageView>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Zv-mf-SAt">
                             <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -49,14 +41,11 @@
                     <constraints>
                         <constraint firstAttribute="bottom" secondItem="6Zv-mf-SAt" secondAttribute="bottom" id="0HX-qC-GIP"/>
                         <constraint firstItem="t2q-Jd-Dv4" firstAttribute="leading" secondItem="ktD-Bv-DH5" secondAttribute="leading" constant="16" id="3yb-bV-2Qx"/>
-                        <constraint firstItem="Ev3-4z-KOk" firstAttribute="centerY" secondItem="ktD-Bv-DH5" secondAttribute="centerY" id="6cm-1e-ERa"/>
                         <constraint firstItem="6Zv-mf-SAt" firstAttribute="leading" secondItem="ktD-Bv-DH5" secondAttribute="leading" id="KRq-Yw-twd"/>
                         <constraint firstItem="t2q-Jd-Dv4" firstAttribute="top" secondItem="ktD-Bv-DH5" secondAttribute="top" constant="2" id="b8m-IT-dCT"/>
-                        <constraint firstAttribute="trailing" secondItem="Ev3-4z-KOk" secondAttribute="trailing" constant="16" id="dn6-TU-9Is"/>
                         <constraint firstItem="6Zv-mf-SAt" firstAttribute="top" secondItem="ktD-Bv-DH5" secondAttribute="top" id="jgp-aA-kl9"/>
                         <constraint firstItem="6Zv-mf-SAt" firstAttribute="leading" secondItem="ktD-Bv-DH5" secondAttribute="leading" id="jx6-1p-8C1"/>
                         <constraint firstAttribute="trailing" secondItem="6Zv-mf-SAt" secondAttribute="trailing" id="n1N-rN-bd8"/>
-                        <constraint firstItem="Ev3-4z-KOk" firstAttribute="leading" secondItem="t2q-Jd-Dv4" secondAttribute="trailing" constant="8" id="pib-8Z-BPZ"/>
                         <constraint firstAttribute="bottom" secondItem="t2q-Jd-Dv4" secondAttribute="bottom" constant="2" id="q2M-e3-yPs"/>
                         <constraint firstAttribute="trailing" secondItem="6Zv-mf-SAt" secondAttribute="trailing" id="xem-ne-0EK"/>
                     </constraints>
@@ -82,7 +71,6 @@
         </view>
     </objects>
     <resources>
-        <image name="rightArrow_ic" width="3" height="4.6666665077209473"/>
         <namedColor name="primary">
             <color red="0.23921568627450979" green="0.82352941176470584" blue="0.80784313725490198" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
