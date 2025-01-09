@@ -56,18 +56,70 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				"/Localized: Resources/Localizable.strings",
+				"Common/Extensions/Strings+Extensions.swift",
+				"Common/Extensions/UIFonts+Extensions.swift",
+				"Common/Extensions/UIImageView+Extensions.swift",
+				"Common/Extensions/UITableView+Extensions.swift",
+				"Common/Extensions/UITableViewCell+Extensions.swift",
+				"Common/Extensions/UIView+Extensions.swift",
+				"Common/Extensions/UIViewController+Extensions.swift",
+				Common/Helpers/FamilyFonts.swift,
+				Common/Helpers/NetworkMonitor.swift,
+				Common/Helpers/Storyboarded.swift,
+				Common/Managers/ColorManager.swift,
+				Common/Managers/ImageManager.swift,
+				Common/Patterns/Observable.swift,
+				Common/Protocols/NibLoadableView.swift,
+				Common/Protocols/ReusableView.swift,
+				Core/Base/BaseViewController.swift,
+				Core/Base/BaseViewModel.swift,
+				Core/Factories/ViewModelFactory.swift,
+				"Data/Extensions/UserDefaults+Extensions.swift",
+				Data/Helpers/UserDefaultsKeys.swift,
+				Domain/ColorUseCase/GetBackgroundColorUseCase.swift,
+				Domain/ColorUseCase/SetBackgroundColorUseCase.swift,
+				Domain/ProductUseCase/FetchProductDetailUseCase.swift,
+				Domain/ProductUseCase/FetchProductsUseCase.swift,
+				Model/Products/Product.swift,
+				Networking/DTOs/ErrorResponse.swift,
+				Networking/DTOs/Products/Requests/FetchProductRequest.swift,
+				Networking/DTOs/Products/Requests/FetchProductsRequest.swift,
+				Networking/DTOs/Products/Responses/ProductResponse.swift,
+				Networking/NetworkCore/Endpoint.swift,
+				Networking/NetworkCore/NetworkManager.swift,
+				Networking/NetworkHelpers/APIError.swift,
+				Networking/NetworkHelpers/ErrorCode.swift,
+				Networking/NetworkHelpers/ErrorMessage.swift,
+				Networking/NetworkHelpers/ErrorTitle.swift,
+				Presentation/Menu/MenuViewController.swift,
 				Presentation/Menu/MenuViewController.xib,
+				Presentation/Menu/MenuViewModel.swift,
 				Presentation/ProductDetail/ProductDetailViewController.swift,
 				Presentation/ProductDetail/ProductDetailViewController.xib,
 				Presentation/ProductDetail/ProductDetailViewData.swift,
 				Presentation/ProductDetail/ProductDetailViewModel.swift,
+				Presentation/Products/ProductCell/ProductCellView.swift,
 				Presentation/Products/ProductCell/ProductCellView.xib,
+				Presentation/Products/ProductsViewController.swift,
 				Presentation/Products/ProductsViewController.xib,
+				Presentation/Products/ProductsViewModel.swift,
+				Presentation/TabBar/MainTabBarController.swift,
+				Presentation/TabBar/MainTabBarViewModel.swift,
+				Presentation/TabBar/TabBarItem.swift,
+				Repository/ColorRepository/ColorRepositoryProtocol.swift,
+				Repository/ColorRepository/UserDefaultsColorRepository.swift,
+				Repository/ProductsRepository/ProductsRepositoryProtocol.swift,
+				Repository/ProductsRepository/RemoteProductsRepository.swift,
 				Resources/Assets/Colors.xcassets,
 				"Resources/Fonts/MuseoSans-300.otf",
 				"Resources/Fonts/MuseoSans-500.otf",
 				"Resources/Fonts/MuseoSans-700.otf",
+				UIComponents/Configurables/BackButtonConfigurable.swift,
+				UIComponents/Helpers/ShadowValues.swift,
+				UIComponents/Helpers/ViewStylerProtocol.swift,
+				UIComponents/OptionView/OptionView.swift,
 				UIComponents/OptionView/OptionView.xib,
+				UIComponents/OptionView/OptionViewData.swift,
 			);
 			target = 3E0C35FA2D2F893D003B669D /* ProductsAppTests */;
 		};
@@ -75,18 +127,70 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				"/Localized: Resources/Localizable.strings",
+				"Common/Extensions/Strings+Extensions.swift",
+				"Common/Extensions/UIFonts+Extensions.swift",
+				"Common/Extensions/UIImageView+Extensions.swift",
+				"Common/Extensions/UITableView+Extensions.swift",
+				"Common/Extensions/UITableViewCell+Extensions.swift",
+				"Common/Extensions/UIView+Extensions.swift",
+				"Common/Extensions/UIViewController+Extensions.swift",
+				Common/Helpers/FamilyFonts.swift,
+				Common/Helpers/NetworkMonitor.swift,
+				Common/Helpers/Storyboarded.swift,
+				Common/Managers/ColorManager.swift,
+				Common/Managers/ImageManager.swift,
+				Common/Patterns/Observable.swift,
+				Common/Protocols/NibLoadableView.swift,
+				Common/Protocols/ReusableView.swift,
+				Core/Base/BaseViewController.swift,
+				Core/Base/BaseViewModel.swift,
+				Core/Factories/ViewModelFactory.swift,
+				"Data/Extensions/UserDefaults+Extensions.swift",
+				Data/Helpers/UserDefaultsKeys.swift,
+				Domain/ColorUseCase/GetBackgroundColorUseCase.swift,
+				Domain/ColorUseCase/SetBackgroundColorUseCase.swift,
+				Domain/ProductUseCase/FetchProductDetailUseCase.swift,
+				Domain/ProductUseCase/FetchProductsUseCase.swift,
+				Model/Products/Product.swift,
+				Networking/DTOs/ErrorResponse.swift,
+				Networking/DTOs/Products/Requests/FetchProductRequest.swift,
+				Networking/DTOs/Products/Requests/FetchProductsRequest.swift,
+				Networking/DTOs/Products/Responses/ProductResponse.swift,
+				Networking/NetworkCore/Endpoint.swift,
+				Networking/NetworkCore/NetworkManager.swift,
+				Networking/NetworkHelpers/APIError.swift,
+				Networking/NetworkHelpers/ErrorCode.swift,
+				Networking/NetworkHelpers/ErrorMessage.swift,
+				Networking/NetworkHelpers/ErrorTitle.swift,
+				Presentation/Menu/MenuViewController.swift,
 				Presentation/Menu/MenuViewController.xib,
+				Presentation/Menu/MenuViewModel.swift,
 				Presentation/ProductDetail/ProductDetailViewController.swift,
 				Presentation/ProductDetail/ProductDetailViewController.xib,
 				Presentation/ProductDetail/ProductDetailViewData.swift,
 				Presentation/ProductDetail/ProductDetailViewModel.swift,
+				Presentation/Products/ProductCell/ProductCellView.swift,
 				Presentation/Products/ProductCell/ProductCellView.xib,
+				Presentation/Products/ProductsViewController.swift,
 				Presentation/Products/ProductsViewController.xib,
+				Presentation/Products/ProductsViewModel.swift,
+				Presentation/TabBar/MainTabBarController.swift,
+				Presentation/TabBar/MainTabBarViewModel.swift,
+				Presentation/TabBar/TabBarItem.swift,
+				Repository/ColorRepository/ColorRepositoryProtocol.swift,
+				Repository/ColorRepository/UserDefaultsColorRepository.swift,
+				Repository/ProductsRepository/ProductsRepositoryProtocol.swift,
+				Repository/ProductsRepository/RemoteProductsRepository.swift,
 				Resources/Assets/Colors.xcassets,
 				"Resources/Fonts/MuseoSans-300.otf",
 				"Resources/Fonts/MuseoSans-500.otf",
 				"Resources/Fonts/MuseoSans-700.otf",
+				UIComponents/Configurables/BackButtonConfigurable.swift,
+				UIComponents/Helpers/ShadowValues.swift,
+				UIComponents/Helpers/ViewStylerProtocol.swift,
+				UIComponents/OptionView/OptionView.swift,
 				UIComponents/OptionView/OptionView.xib,
+				UIComponents/OptionView/OptionViewData.swift,
 			);
 			target = 3E0C36042D2F893D003B669D /* ProductsAppUITests */;
 		};
@@ -663,6 +767,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
 				MARKETING_VERSION = 1.0;
@@ -682,6 +787,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
 				MARKETING_VERSION = 1.0;
@@ -700,6 +806,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tc.ProductsAppUITests;
@@ -717,6 +824,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tc.ProductsAppUITests;

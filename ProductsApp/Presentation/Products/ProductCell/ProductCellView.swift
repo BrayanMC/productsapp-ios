@@ -11,7 +11,7 @@ class ProductCellView: UITableViewCell {
     
     @IBOutlet weak var titleLabel: UILabel!
     
-    private var selectedProduct: Product?
+    var selectedProduct: Product?
     var productAction: ((Product) -> Void)?
     
     override func awakeFromNib() {

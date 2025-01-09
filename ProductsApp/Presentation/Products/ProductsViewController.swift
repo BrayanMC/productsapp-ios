@@ -23,11 +23,6 @@ class ProductsViewController: BaseViewController, Storyboarded {
         viewModel?.fetchProducts()
     }
     
-    override func viewWillLayoutSubviews() {
-        super.viewWillLayoutSubviews()
-        updateProductsTableViewHeight()
-    }
-    
     private func setupView() {
         prepareTableView()
     }
@@ -37,7 +32,6 @@ class ProductsViewController: BaseViewController, Storyboarded {
             guard let self = self else { return }
             if !result.isEmpty {
                 productsTableView.reloadData()
-                updateProductsTableViewHeight()
             }
         }
         
@@ -57,10 +51,7 @@ class ProductsViewController: BaseViewController, Storyboarded {
         productsTableView.separatorStyle = .none
     }
     
-    private func updateProductsTableViewHeight() {
-    }
-    
-    private func navigateToDetail(with product: Product) {
+    public func navigateToDetail(with product: Product) {
         let viewController = ProductDetailViewController.instantiateFromXib()
         let viewData = ProductDetailViewData(product: product)
         viewController.viewModel = ViewModelFactory.makeProductDetailViewModel(with: viewData)
