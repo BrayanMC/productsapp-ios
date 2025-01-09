@@ -42,14 +42,14 @@ class MainTabBarController: UITabBarController, Storyboarded {
         
         let normalAttributes: [NSAttributedString.Key: Any] = [
             .font: UIFont.museoSansFont(type: .W700, size: 14),
-            .foregroundColor: ColorManager.shared.gray
+            .foregroundColor: ColorManager.shared.body
         ]
         let selectedAttributes: [NSAttributedString.Key: Any] = [
             .font: UIFont.museoSansFont(type: .W700, size: 14),
             .foregroundColor: ColorManager.shared.primary
         ]
         
-        appearance.stackedLayoutAppearance.normal.iconColor = ColorManager.shared.gray
+        appearance.stackedLayoutAppearance.normal.iconColor = ColorManager.shared.body
         appearance.stackedLayoutAppearance.normal.titleTextAttributes = normalAttributes
         appearance.stackedLayoutAppearance.selected.iconColor = ColorManager.shared.primary
         appearance.stackedLayoutAppearance.selected.titleTextAttributes =  selectedAttributes

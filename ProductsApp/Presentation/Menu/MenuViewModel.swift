@@ -14,7 +14,7 @@ class MenuViewModel: BaseViewModel {
     
     private let colors: [UIColor] = [.white, .lightGray, .blue, .green, .red]
     
-    private(set) var backgroundColor: Observable<UIColor> = Observable(nil)
+    private(set) var backgroundColor: Observable<UIColor?> = Observable(nil)
     
     init(
         getBackgroundColorUseCase: GetBackgroundColorUseCase,

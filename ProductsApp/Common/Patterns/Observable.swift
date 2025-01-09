@@ -7,20 +7,20 @@
 
 class Observable<T> {
     
-    var value: T? {
+    var value: T {
         didSet {
-            self.listener?(self.value)
+            listener?(value)
         }
     }
     
-    init( _ value: T?) {
+    private var listener: ((T) -> Void)?
+    
+    init(_ value: T) {
         self.value = value
     }
     
-    private var listener: ((T?) -> Void)?
-    
-    func bind( _ listener: @escaping ((T?)) -> Void) {
-        listener(value)
+    func bind(_ listener: @escaping (T) -> Void) {
         self.listener = listener
+        listener(value)
     }
 }

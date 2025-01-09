@@ -21,11 +21,11 @@ public final class ColorManager {
         return UIColor(named: "primary", in: Bundle.main, compatibleWith: nil) ?? .clear
     }()
     
-    public lazy var gray: UIColor = {
-        return UIColor(named: "gray", in: Bundle.main, compatibleWith: nil) ?? .clear
+    public lazy var body: UIColor = {
+        return UIColor(named: "body", in: Bundle.main, compatibleWith: nil) ?? .clear
     }()
     
-    public lazy var lightGray: UIColor = {
-        return UIColor(named: "lightGray", in: Bundle.main, compatibleWith: nil) ?? .clear
+    public lazy var label: UIColor = {
+        return UIColor(named: "label", in: Bundle.main, compatibleWith: nil) ?? .clear
     }()
 }

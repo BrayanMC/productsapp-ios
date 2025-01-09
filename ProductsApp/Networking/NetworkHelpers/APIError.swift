@@ -8,5 +8,5 @@
 struct APIError: Error {
     let message: String
     let error: String
-    let code: ErrorCode
+    let code: Int
 }

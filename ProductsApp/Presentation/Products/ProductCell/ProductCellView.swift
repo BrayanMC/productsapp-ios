@@ -11,7 +11,8 @@ class ProductCellView: UITableViewCell {
     
     @IBOutlet weak var titleLabel: UILabel!
     
-    var productAction: (() -> Void)?
+    private var selectedProduct: Product?
+    var productAction: ((Product) -> Void)?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -23,12 +24,15 @@ class ProductCellView: UITableViewCell {
         contentView.addTapGesture(self, action: #selector(productButtonTapped(_:)))
     }
     
-    func buildCell() {
-        titleLabel.text = "Hola"
+    func buildCell(with product: Product) {
+        selectedProduct = product
+        titleLabel.text = product.title
     }
     
     @objc func productButtonTapped(_ gesture: UITapGestureRecognizer) {
-        productAction?()
+        guard let product = selectedProduct else { return }
+        
+        productAction?(product)
     }
 }
 

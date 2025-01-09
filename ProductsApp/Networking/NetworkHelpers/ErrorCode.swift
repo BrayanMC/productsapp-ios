@@ -6,7 +6,7 @@
 //
 
 enum ErrorCode: Int {
-    case genericError = 0
-    case conversionError = 1
-    case networkError = 2
+    case GenericError = 0
+    case ConversionError = 1
+    case NetworkError = 2
 }

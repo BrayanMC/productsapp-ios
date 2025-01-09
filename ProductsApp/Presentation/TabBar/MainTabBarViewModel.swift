@@ -11,7 +11,7 @@ class MainTabBarViewModel: BaseViewModel {
     
     private let getBackgroundColorUseCase: GetBackgroundColorUseCase
     
-    private(set) var backgroundColor: Observable<UIColor> = Observable(nil)
+    private(set) var backgroundColor: Observable<UIColor?> = Observable(nil)
     
     init(getBackgroundColorUseCase: GetBackgroundColorUseCase) {
         self.getBackgroundColorUseCase = getBackgroundColorUseCase

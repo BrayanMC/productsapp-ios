@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ProductsViewController: UIViewController, Storyboarded {
+class ProductsViewController: BaseViewController, Storyboarded {
     
     @IBOutlet weak var productsTableView: UITableView!
     @IBOutlet weak var productsTableViewHeightCosntraint: NSLayoutConstraint!
@@ -34,7 +34,20 @@ class ProductsViewController: UIViewController, Storyboarded {
     }
     
     private func setupBindings() {
+        viewModel?.products.bind { [weak self] result in
+            guard let self = self else { return }
+            if !result.isEmpty {
+                productsTableView.reloadData()
+                updateProductsTableViewHeight()
+            }
+        }
         
+        viewModel?.error.bind { [weak self] error in
+            guard let self = self else { return }
+            if let error = error {
+                showErrorAlert(error: error)
+            }
+        }
     }
     
     private func prepareTableView() {
@@ -56,6 +69,16 @@ class ProductsViewController: UIViewController, Storyboarded {
 }
 
 extension ProductsViewController: UITableViewDelegate {
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let offsetY = scrollView.contentOffset.y
+        let contentHeight = scrollView.contentSize.height
+        let frameHeight = scrollView.frame.size.height
+        
+        if offsetY > contentHeight - frameHeight - 100 {
+            viewModel?.fetchProducts()
+        }
+    }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         cellHeight
@@ -79,7 +102,7 @@ extension ProductsViewController: UITableViewDelegate {
 extension ProductsViewController: UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        40
+        viewModel?.products.value.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -88,7 +111,9 @@ extension ProductsViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: ProductCellView = tableView.dequeueCell(forIndexPath: indexPath)
-        cell.buildCell()
+        if let products = viewModel?.products.value {
+            cell.buildCell(with: products[indexPath.section])
+        }
         return cell
     }
 }
