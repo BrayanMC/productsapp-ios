@@ -10,7 +10,6 @@ import UIKit
 class ProductsViewController: BaseViewController, Storyboarded {
     
     @IBOutlet weak var productsTableView: UITableView!
-    @IBOutlet weak var productsTableViewHeightCosntraint: NSLayoutConstraint!
     
     private let cellHeight: CGFloat = 30.0
     private let rowSpacing: CGFloat = 16.0
@@ -54,17 +53,22 @@ class ProductsViewController: BaseViewController, Storyboarded {
         productsTableView.delegate = self
         productsTableView.dataSource = self
         productsTableView.register(ProductCellView.self)
+        productsTableView.alwaysBounceVertical = true
         productsTableView.separatorStyle = .none
     }
     
     private func updateProductsTableViewHeight() {
-        DispatchQueue.main.async {
-            self.productsTableViewHeightCosntraint.constant = self.productsTableView.intrinsicContentSize.height
-        }
     }
     
-    private func navigateToDetail() {
+    private func navigateToDetail(with product: Product) {
+        let viewController = ProductDetailViewController.instantiateFromXib()
+        let viewData = ProductDetailViewData(product: product)
+        viewController.viewModel = ViewModelFactory.makeProductDetailViewModel(with: viewData)
         
+        let navigationController = UINavigationController(rootViewController: viewController)
+        
+        navigationController.modalPresentationStyle = .fullScreen
+        present(navigationController, animated: true, completion: nil)
     }
 }
 
@@ -113,6 +117,10 @@ extension ProductsViewController: UITableViewDataSource {
         let cell: ProductCellView = tableView.dequeueCell(forIndexPath: indexPath)
         if let products = viewModel?.products.value {
             cell.buildCell(with: products[indexPath.section])
+            cell.productAction = { [weak self] product in
+                guard let self = self else { return }
+                navigateToDetail(with: product)
+            }
         }
         return cell
     }

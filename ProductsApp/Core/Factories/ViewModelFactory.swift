@@ -38,4 +38,10 @@ class ViewModelFactory {
             fetchProductDetailUseCase: fetchProductDetailUseCase
         )
     }
+    
+    static func makeProductDetailViewModel(with viewData: ProductDetailViewData) -> ProductDetailViewModel {
+        ProductDetailViewModel(
+            viewData: viewData
+        )
+    }
 }

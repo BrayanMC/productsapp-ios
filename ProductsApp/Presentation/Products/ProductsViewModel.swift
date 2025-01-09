@@ -28,6 +28,9 @@ class ProductsViewModel: BaseViewModel {
     }
     
     func fetchProducts() {
+        guard !isLoading else { return }
+        isLoading = true
+        
         fetchProductsUseCase.execute(offset: currentPage * pageSize, limit: pageSize)
             .subscribe(onSuccess: { [weak self] result in
                 guard let self = self else { return }

@@ -35,10 +35,10 @@ class MainTabBarController: UITabBarController, Storyboarded {
         self.viewControllers = viewControllers
     }
     
-    private func setupTabBarAppearance() {
+    private func setupTabBarAppearance(with color: UIColor = ColorManager.shared.secondary) {
         let appearance: UITabBarAppearance = UITabBarAppearance()
         appearance.configureWithOpaqueBackground()
-        appearance.backgroundColor = ColorManager.shared.secondary
+        appearance.backgroundColor = color
         
         let normalAttributes: [NSAttributedString.Key: Any] = [
             .font: UIFont.museoSansFont(type: .W700, size: 14),
@@ -62,12 +62,7 @@ class MainTabBarController: UITabBarController, Storyboarded {
         viewModel?.backgroundColor.bind({ [weak self] color in
             guard let self = self, let color = color else { return }
             
-            let appearance = UITabBarAppearance()
-            appearance.configureWithOpaqueBackground()
-            appearance.backgroundColor = color
-            
-            tabBar.standardAppearance = appearance
-            tabBar.scrollEdgeAppearance = appearance
+            setupTabBarAppearance(with: color)
         })
     }
 }

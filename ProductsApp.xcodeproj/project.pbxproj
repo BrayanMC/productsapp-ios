@@ -57,6 +57,10 @@
 			membershipExceptions = (
 				"/Localized: Resources/Localizable.strings",
 				Presentation/Menu/MenuViewController.xib,
+				Presentation/ProductDetail/ProductDetailViewController.swift,
+				Presentation/ProductDetail/ProductDetailViewController.xib,
+				Presentation/ProductDetail/ProductDetailViewData.swift,
+				Presentation/ProductDetail/ProductDetailViewModel.swift,
 				Presentation/Products/ProductCell/ProductCellView.xib,
 				Presentation/Products/ProductsViewController.xib,
 				Resources/Assets/Colors.xcassets,
@@ -72,6 +76,10 @@
 			membershipExceptions = (
 				"/Localized: Resources/Localizable.strings",
 				Presentation/Menu/MenuViewController.xib,
+				Presentation/ProductDetail/ProductDetailViewController.swift,
+				Presentation/ProductDetail/ProductDetailViewController.xib,
+				Presentation/ProductDetail/ProductDetailViewData.swift,
+				Presentation/ProductDetail/ProductDetailViewModel.swift,
 				Presentation/Products/ProductCell/ProductCellView.xib,
 				Presentation/Products/ProductsViewController.xib,
 				Resources/Assets/Colors.xcassets,

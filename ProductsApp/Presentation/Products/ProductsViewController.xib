@@ -11,7 +11,6 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProductsViewController" customModule="ProductsApp" customModuleProvider="target">
             <connections>
                 <outlet property="productsTableView" destination="fup-w5-BGL" id="Km0-xB-4Mr"/>
-                <outlet property="productsTableViewHeightCosntraint" destination="zg7-6L-W7A" id="RH5-tT-NvF"/>
                 <outlet property="view" destination="nlt-HK-31B" id="wNy-iQ-mNh"/>
             </connections>
         </placeholder>
@@ -20,46 +19,18 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VMu-ZL-vJU">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" bouncesZoom="NO" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="fup-w5-BGL">
                     <rect key="frame" x="0.0" y="20" width="414" height="716"/>
-                    <subviews>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D9i-yC-sfx">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="46"/>
-                            <subviews>
-                                <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="fup-w5-BGL">
-                                    <rect key="frame" x="0.0" y="8" width="414" height="30"/>
-                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" priority="999" constant="30" id="zg7-6L-W7A"/>
-                                    </constraints>
-                                </tableView>
-                            </subviews>
-                            <constraints>
-                                <constraint firstAttribute="bottom" secondItem="fup-w5-BGL" secondAttribute="bottom" constant="8" id="7Q5-ia-CXh"/>
-                                <constraint firstAttribute="trailing" secondItem="fup-w5-BGL" secondAttribute="trailing" id="ArQ-qB-XbL"/>
-                                <constraint firstItem="fup-w5-BGL" firstAttribute="top" secondItem="D9i-yC-sfx" secondAttribute="top" constant="8" id="ED8-P0-SgQ"/>
-                                <constraint firstItem="fup-w5-BGL" firstAttribute="leading" secondItem="D9i-yC-sfx" secondAttribute="leading" id="Mv9-jG-IlJ"/>
-                            </constraints>
-                        </view>
-                    </subviews>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <constraints>
-                        <constraint firstItem="D9i-yC-sfx" firstAttribute="height" secondItem="VMu-ZL-vJU" secondAttribute="height" priority="250" id="0vo-gb-bAa"/>
-                        <constraint firstItem="D9i-yC-sfx" firstAttribute="width" secondItem="VMu-ZL-vJU" secondAttribute="width" id="724-qi-RiZ"/>
-                        <constraint firstAttribute="trailing" secondItem="D9i-yC-sfx" secondAttribute="trailing" id="Qzq-JH-ugV"/>
-                        <constraint firstAttribute="bottom" secondItem="D9i-yC-sfx" secondAttribute="bottom" constant="16" id="h5w-Pd-QTr"/>
-                        <constraint firstItem="D9i-yC-sfx" firstAttribute="top" secondItem="VMu-ZL-vJU" secondAttribute="top" id="ine-as-z2V"/>
-                        <constraint firstItem="D9i-yC-sfx" firstAttribute="leading" secondItem="VMu-ZL-vJU" secondAttribute="leading" id="rsq-8k-JcS"/>
-                    </constraints>
-                </scrollView>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="kY9-Al-TMA"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="VMu-ZL-vJU" secondAttribute="bottom" id="EPd-jg-Ya3"/>
-                <constraint firstItem="VMu-ZL-vJU" firstAttribute="leading" secondItem="kY9-Al-TMA" secondAttribute="leading" id="I4b-xi-pJg"/>
-                <constraint firstItem="VMu-ZL-vJU" firstAttribute="trailing" secondItem="kY9-Al-TMA" secondAttribute="trailing" id="cRd-lo-G2z"/>
-                <constraint firstItem="VMu-ZL-vJU" firstAttribute="top" secondItem="kY9-Al-TMA" secondAttribute="top" id="kcj-JB-JaV"/>
+                <constraint firstItem="fup-w5-BGL" firstAttribute="leading" secondItem="kY9-Al-TMA" secondAttribute="leading" id="Azo-Cn-0d7"/>
+                <constraint firstAttribute="bottom" secondItem="fup-w5-BGL" secondAttribute="bottom" id="Zp3-8X-b1z"/>
+                <constraint firstItem="fup-w5-BGL" firstAttribute="top" secondItem="kY9-Al-TMA" secondAttribute="top" id="cdA-xv-u7p"/>
+                <constraint firstItem="fup-w5-BGL" firstAttribute="trailing" secondItem="kY9-Al-TMA" secondAttribute="trailing" id="pZM-Jb-35U"/>
             </constraints>
             <point key="canvasLocation" x="-167" y="-11"/>
         </view>
